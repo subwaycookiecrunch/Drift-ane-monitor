@@ -108,12 +108,18 @@ class vnode_fdinfowithpath(ctypes.Structure):
 try:
     _libproc = ctypes.CDLL("/usr/lib/libproc.dylib", use_errno=True)
     _proc_pidinfo = _libproc.proc_pidinfo
+    _proc_pidinfo.argtypes = [ctypes.c_int, ctypes.c_int, ctypes.c_uint64, ctypes.c_void_p, ctypes.c_int]
+    _proc_pidinfo.restype = ctypes.c_int
+    
     _proc_pidfdinfo = _libproc.proc_pidfdinfo
+    _proc_pidfdinfo.argtypes = [ctypes.c_int, ctypes.c_int, ctypes.c_int, ctypes.c_void_p, ctypes.c_int]
+    _proc_pidfdinfo.restype = ctypes.c_int
 except OSError as e:
     logging.warning(f"Failed to load libproc: {e}")
     _libproc = None
     _proc_pidinfo = None
     _proc_pidfdinfo = None
+
 
 # ──────────────────────────────────────────────────────────────
 # Model file extensions and framework classification
