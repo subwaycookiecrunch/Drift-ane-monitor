@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Telemetry databases, logs & binaries
+*.db
+*.db-wal
+*.db-shm
+*.log
+*.driftlog
+hammer_ane
+a.out
+test_offset
+
+# JSON and PDF reports
+drift_bench_*.json
+*.pdf
+report.md

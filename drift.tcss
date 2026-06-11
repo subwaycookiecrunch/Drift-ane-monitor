@@ -1,0 +1,136 @@
+Screen {
+    background: #1e1e1e;
+    color: #cccccc;
+}
+
+Header {
+    background: #2a2a2a;
+    color: #5DC9A5;
+    dock: top;
+}
+
+Footer {
+    background: #2a2a2a;
+    color: #888888;
+    dock: bottom;
+}
+
+.section-title {
+    color: #888888;
+    text-style: bold;
+    padding: 1 0 1 1;
+}
+
+#util-container {
+    height: 5;
+    border-bottom: solid #333333;
+    padding-left: 1;
+}
+
+#table-container {
+    height: 1fr;
+}
+
+DataTable {
+    background: #1e1e1e;
+}
+
+DataTable > .datatable--header {
+    background: #2a2a2a;
+    color: #5DC9A5;
+    text-style: bold;
+}
+
+DataTable > .datatable--cursor {
+    background: #333333;
+}
+
+#watch-container {
+    padding: 1 2;
+    height: 1fr;
+}
+
+.watch-title {
+    color: #888888;
+    text-style: bold;
+    margin-top: 1;
+}
+
+.watch-data {
+    margin-left: 2;
+}
+
+#events-container {
+    height: 1fr;
+    border-top: solid #333333;
+    margin-top: 1;
+    padding-top: 1;
+}
+
+OptionList {
+    border: solid #5DC9A5;
+    width: 60%;
+    height: 60%;
+    margin: 4;
+}
+
+#leaderboard-desc {
+    color: #888888;
+    margin-left: 1;
+}
+
+#compare-container {
+    layout: horizontal;
+    height: 1fr;
+}
+
+.compare-panel {
+    width: 50fr;
+    height: 100%;
+    border-right: solid #333333;
+    padding: 1 2;
+}
+
+#compare-panel-left {
+    border-right: solid #333333;
+}
+
+#compare-panel-right {
+    border: none;
+}
+
+#compare-footer {
+    height: 3;
+    border-top: solid #333333;
+    padding: 1 2;
+    color: #cccccc;
+    background: #1e1e1e;
+}
+
+#fingerprint-container {
+    layout: vertical;
+    height: 1fr;
+}
+
+#live-panel {
+    height: 1fr;
+    min-height: 8;
+    border-bottom: solid #333333;
+}
+
+#log-panel {
+    height: 1fr;
+    min-height: 8;
+}
+
+#ane-idle-widget {
+    height: 100%;
+    content-align: center middle;
+    text-align: center;
+}
+
+#inference-log {
+    background: #1e1e1e;
+    color: #cccccc;
+    height: 1fr;
+}

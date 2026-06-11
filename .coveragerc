@@ -1,0 +1,23 @@
+[run]
+branch = True
+omit =
+    .venv/*
+    setup.py
+    bench.py
+    drift.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    if self\.debug:
+    raise AssertionError
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    except ImportError:
+    except OSError:
+    sys\.exit
+    if platform\.machine\(\) != "arm64":
+    if major_version < 13:
+    _refresh_ollama_cache
+    _resolve_ollama_blob
